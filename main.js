@@ -1,20 +1,13 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que calcule la velocidad de un proyectil que recorre 2 Km en 5 minutos. 
-    // Expresarel resultado en metros/segundo. 
-    // Velocidad = espacio/tiempo.
+    // Escribir un programa que calcule el volumen de una esfera:
+    // Radio = 3 volumen de la esfera = 4/3 * PI * radio˄3
+   
 
-    let espacio = 2000;
-    let tiempo = 300;
+    let radio = 3;
     
-    let velocidad = espacio/tiempo
+   
+    console.group(`%cFormula ${4/3} * ${Math.PI} * ${Math.pow(radio,3)}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-
-    console.group(`%cFormula ${espacio} / ${tiempo}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-        console.log(`Velocidad del proyectil en m/s: "${velocidad}"`);
-    console.groupEnd();
-
-    console.group(`%cFormula ${espacio} / ${tiempo}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-        console.log(`Velocidad del proyectil en m/s: "${velocidad}"`);
+        console.log(`Volumen de la esfera: "${4/3 * Math.PI * Math.pow(radio,3)}"`);
     console.groupEnd();
 })
