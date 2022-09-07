@@ -1,13 +1,15 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que calcule el volumen de una esfera:
-    // Radio = 3 volumen de la esfera = 4/3 * PI * radio˄3
+//   8. Escribir un programa que evalúe la siguiente expresión:
+//  (a+7*c)/(b+2-a)+2*b 
    
 
-    let radio = 3;
+    let a = Number(prompt("Ingrese un valor para a: "));
+    let b = Number(prompt("Ingrese un valor para b: "));
+    let c = Number(prompt("Ingrese un valor para c: "));
     
    
-    console.group(`%cFormula ${4/3} * ${Math.PI} * ${Math.pow(radio,3)}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.group(`%cFormula (${a} + ${7} * ${c}) / (${b}+${2}-${a}) + ${2} * ${b}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-        console.log(`Volumen de la esfera: "${4/3 * Math.PI * Math.pow(radio,3)}"`);
+        console.log(`Resultado de la expresión: "${(a+7*c)/(b+2-a)+2*b}"`);
     console.groupEnd();
 })
