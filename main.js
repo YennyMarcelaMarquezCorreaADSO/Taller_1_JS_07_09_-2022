@@ -1,13 +1,13 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // 3. Un programa que lea 4 números y calcule la media. 
-    // Media= (num1 + num2 + num3 + num4)/4 
+    // 4. Escribir un programa que calcule el área de un triángulo:
+    // Base = 7 altura = 4 área del triángulo = (base * altura)/2
 
-    let num1 = Number(prompt("Ingrese el numero 1", 1));
-    let num2 = Number(prompt("Ingrese el numero 2", 2));
-    let num3 = Number(prompt("Ingrese el numero 3", 3));
-    let num4 = Number(prompt("Ingrese el numero 4", 4));
-    let Media = (num1 + num2 + num3 + num4)/4 ;
-    console.log(`%cFormula (${num1} + ${num2} + ${num3} + ${num4}) / 4`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-    console.log(`El promedio es : "${Media}"`);
+
+    let base = Number(prompt("Ingrese la base", 7));
+    let altura = Number(prompt("Ingrese la altura", 4));
+
+    let triangulo =(base * altura)/2 ;
+    console.log(`%cFormula (${base} * ${altura}) / 2`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.log(`El área del triangulo es : "${triangulo}"`);
 
 })
