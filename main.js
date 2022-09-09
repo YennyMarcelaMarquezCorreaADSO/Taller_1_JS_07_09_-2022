@@ -1,19 +1,18 @@
 addEventListener("DOMContentLoaded", ()=>{
-// //     // Ejercicio 13. Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil 
-// expresada en kilómetros por hora, proporcione la velocidad en metros por segundos.
-
+    // Ejercicio 14. Una farmacia aplica al precio de los remedios el 10% de descuento, hacer un programa que
+    // ingresando el costo de los medicamentos calcules el descuento y el precio final.
     
-   
-   
 
-    let distancia = Number(prompt("Ingrese la distancia: ",80))
-    let tiempo = Number(prompt("Ingrese el tiempo: ", 1.5));
-    let velocidad = ((distancia*1000)/(tiempo*3600))
+    let medicamento = Number(prompt("Ingrese el valor del medicamento: "))
+    let descuento = 0.1
+    let iva= (medicamento*descuento)
+    let valor = (medicamento - iva)
+
   
-    
-   
-    console.group(`%cFormula ((${distancia} * ${1000})/(${tiempo}*${3600})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.log(`valor inicial del medicamento: "${medicamento}"`);
 
-        console.log(`La velocidad del automovil en m/s es: "${velocidad}"`);
+    console.group(`%cFormula (${medicamento} - ${iva})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+
+        console.log(`Precio final con descuento aplicado: "${valor}"`);
     console.groupEnd();
 })
