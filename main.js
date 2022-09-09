@@ -1,21 +1,20 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Calcular el sueldo de un empleado dados como datos de entrada: el nombre, hrs. De trabajo y el pago
-    // en hora. Pagohora=15300
-
-
-    let nombre =  (prompt("Ingrese su nombre: "))
-    let horas =  Number(prompt("Cantidad de horas trabajadas: ",8))
-    let diasMes = 30
-    let pagoHora = 15300
-    let suel = horas*pagoHora
-    let sueldo = suel*diasMes
+    // Ejercicio 19. Un estudiante realiza cuatro exámenes. Realizar el pseudocódigo que representen el algoritmo
+    // correspondiente para obtener el promedio de las calificaciones obtenidas. las calificaciones van 1 a 5
+    // puntos.
     
 
-    console.log(`Nombre empleado: "${nombre}"`);
-    console.log(`Cantidad de horas trabajadas: "${horas}"`);
- 
-    console.group(`%cFormula ${suel} * ${diasMes}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-        console.log(`Sueldo del empleado: "${sueldo}"`);
+    let examen1 = Number(prompt("Nota examen 1: "))
+    let examen2 = Number(prompt("Nota examen 2: "))
+    let examen3 = Number(prompt("Nota examen 3: "))
+    let examen4 = Number(prompt("Nota examen 4: "))
+
+    let Promedio = (examen1 + examen2 + examen3 + examen4)/4
+    
+ 
+    console.group(`%cFormula (${examen1} + ${examen2} + ${examen3} * ${examen4})/4`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+
+        console.log(`Promedio de las calificaciones: "${Promedio}"`);
     console.groupEnd();
 })
