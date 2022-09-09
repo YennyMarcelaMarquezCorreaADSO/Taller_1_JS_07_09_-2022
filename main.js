@@ -1,18 +1,21 @@
 addEventListener("DOMContentLoaded", ()=>{
-// Ejercicio 16. Dado el valor que un cliente paga por un producto, calcular qué valor corresponde al costo total del
-// producto y cuánto es el valor del IVA. Considerando que el porcentaje del IVA puede variar en el
-// tiempo y de un producto a otro, este dato se lee por teclado.
+    // Calcular el sueldo de un empleado dados como datos de entrada: el nombre, hrs. De trabajo y el pago
+    // en hora. Pagohora=15300
 
 
-    let precio =  Number(prompt("Precio total del producto: "))
-    let iva =  Number(prompt("Ingrese el porcentaje de iva: "))
-    let precioiva = precio * (iva/100)
-    let precioTotal = precio + precioiva
-
+    let nombre =  (prompt("Ingrese su nombre: "))
+    let horas =  Number(prompt("Cantidad de horas trabajadas: ",8))
+    let diasMes = 30
+    let pagoHora = 15300
+    let suel = horas*pagoHora
+    let sueldo = suel*diasMes
     
-    console.log(`valor  de iba: "${iva}"`);
-    console.group(`%cFormula (${precio} + ${precioiva})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-        console.log(`Precio total del producto: "${precioTotal}"`);
+    console.log(`Nombre empleado: "${nombre}"`);
+    console.log(`Cantidad de horas trabajadas: "${horas}"`);
+ 
+    console.group(`%cFormula ${suel} * ${diasMes}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+
+        console.log(`Sueldo del empleado: "${sueldo}"`);
     console.groupEnd();
 })
