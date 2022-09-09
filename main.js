@@ -1,18 +1,26 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Escribir un programa que calcule el volumen de un elipsoide
-    // V = (4/3) * PI * a * b *c
+    // Ejercicio 12. Programa que muestre el pago de una llamada telefónica sabiendo que cada minuto cuesta $355
+    // pesos y un IVA de 20%.
     
    
    
 
-    let a = Number(prompt("Ingrese un valor para a: "));
-    let b = Number(prompt("Ingrese un valor para b: "));
-    let c = Number(prompt("Ingrese un valor para c: "))
+    let valor = 355
+    let minutos = Number(prompt("Ingrese la cantidad de minutos: "));
+    let costo = valor*minutos
+    let iva = costo*0.2
+    let costo2 = costo+iva 
+  
     
    
-    console.group(`%cFormula (${4/3}) * ${Math.PI} * ${a} * ${b}* ${c}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.group(`%cFormula ${valor} * ${minutos}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-        console.log(`El volumen del elipsoide es de: "${(4/3) * Math.PI * a * b* c}"`);
+        console.log(`El valor de la llamada sin iva es: "${valor*minutos}"`);
     console.groupEnd();
+
+    console.group(`%cFormula ${costo} + ${iva}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+
+    console.log(`El valor de la llamada con iva del 20% es: "${costo+iva}"`);
+console.groupEnd();
 
 })
