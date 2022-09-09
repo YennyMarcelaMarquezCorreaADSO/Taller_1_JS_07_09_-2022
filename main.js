@@ -1,26 +1,19 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 12. Programa que muestre el pago de una llamada telefónica sabiendo que cada minuto cuesta $355
-    // pesos y un IVA de 20%.
+// //     // Ejercicio 13. Realice un algoritmo que a partir de proporcionarle la velocidad de un automóvil 
+// expresada en kilómetros por hora, proporcione la velocidad en metros por segundos.
+
     
    
    
 
-    let valor = 355
-    let minutos = Number(prompt("Ingrese la cantidad de minutos: "));
-    let costo = valor*minutos
-    let iva = costo*0.2
-    let costo2 = costo+iva 
+    let distancia = Number(prompt("Ingrese la distancia: ",80))
+    let tiempo = Number(prompt("Ingrese el tiempo: ", 1.5));
+    let velocidad = ((distancia*1000)/(tiempo*3600))
   
     
    
-    console.group(`%cFormula ${valor} * ${minutos}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.group(`%cFormula ((${distancia} * ${1000})/(${tiempo}*${3600})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-        console.log(`El valor de la llamada sin iva es: "${valor*minutos}"`);
+        console.log(`La velocidad del automovil en m/s es: "${velocidad}"`);
     console.groupEnd();
-
-    console.group(`%cFormula ${costo} + ${iva}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-    console.log(`El valor de la llamada con iva del 20% es: "${costo+iva}"`);
-console.groupEnd();
-
 })
