@@ -1,63 +1,29 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 22. Pablo compro 5 productos los dos primeros con un 5% de descuento y los 2 últimos con un 2% de descuento, realice un algoritmo que indique cuanto fue el valor a pagar por cada producto y el total de la compra.
+// Ejercicio 23. 
+// Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un
+// depósito.
+// • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo).
+// • Volumen = PI *(radio^2)* H (altura del depósito)
+// • El tiempo se encuentra en minutos.
+// • Normalmente se mide el volumen en litros y el tiempo en segundos..
 
-    let producto1 = Number(prompt("Ingrese un valor del producto 1: "))
-    let producto2 = Number(prompt("Ingrese el valor del producto 2: "))
-    let producto3 = Number(prompt("Ingrese el valor del producto 3: "))
-    let producto4 = Number(prompt("Ingrese el valor del producto 4: "))
-    let producto5 = Number(prompt("Ingrese el valor del producto 5: "))
+    let radio = Number(prompt("Ingrese el valor del radio: "))
+    let altura = Number(prompt("Ingrese la altura: "))
+    let tiempo = Number(prompt("Ingrese el tiempo en minutos: "))
 
-    let descuento1 = (producto1*5/100)
-    let descuento2 = (producto2*5/100)
-    let descuento4 = (producto4*2/100)
-    let descuento5 = (producto5*2/100)
+    let tiem = tiempo *60
+    let Volumen = Math.PI * Math.pow(radio, 2) * altura
+    let Q = (Volumen/tiem)
 
-    let valorcondes1 = (producto1 - descuento1)
-    let valorcondes2 = (producto2 - descuento2)
-    let valorcondes4 = (producto4 - descuento4)
-    let valorcondes5 = (producto5 - descuento5)
+    console.group(`%cFormula ${Math.PI} * ${Math.pow(radio, 2)} * ${altura}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-    let total = (valorcondes1 + valorcondes2 + producto3 + valorcondes4 + valorcondes5)
-
+    console.log(`Es caudal es igual a "${Volumen}"`);
+    console.groupEnd();
 // -------------------------------------------------------------
-    console.group(`%cFormula ${producto1} - ${descuento1}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.group(`%cFormula ${Volumen}/${tiem}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-    console.log(`Costo producto 1 con descuento: : "${valorcondes1}"`);
+    console.log(`Es caudal es igual a "${Q}"`);
     console.groupEnd();
 
-// -----------------------------------------------------------
-
-    console.group(`%cFormula ${producto2} - ${descuento2}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-        console.log(`Costo producto 2 con descuento: "${valorcondes2}"`);
-    console.groupEnd();
-
-// -----------------------------------------------------------
-
-
-    console.log(`Costo del tercer producto: : "${producto3}"`);
-
-// -----------------------------------------------------------
-
-    console.group(`%cFormula ${producto4} - ${descuento4}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-    console.log(`Costo del cuarto producto con descuento: "${valorcondes4}"`);
-    console.groupEnd();
-
-// -----------------------------------------------------------
-
-    console.group(`%cFormula ${producto5} - ${descuento5}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-    console.log(`Costo del quinto producto con descuento: : "${valorcondes5}"`);
-    console.groupEnd();
-
-// -----------------------------------------------------------
-
-    console.group(`%cFormula (${valorcondes1} + ${valorcondes2} + ${producto3} + ${valorcondes4} + ${valorcondes5})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-    console.log(`Valor total: : "${total}"`);
-    console.groupEnd();
-
-// --------------------------------------------------------------
 
 })
