@@ -1,36 +1,17 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 20. Un vendedor recibe un sueldo base más el 10% de comisión sobre sus ventas. Si en un mes
-    // cualquiera hace tres ventas por valores: v1, v2 y v3, ¿cuánto recibirá por comisión? y ¿cuánto en total
-    // sueldo del vendedor?.
-    
+    // Ejercicio 21. Se requiere calcular la distancia entre dos puntos, realizar el código que permita hallar la solución, por favor utilizar funciones matemáticas de Python para ello
+    //d = rc((x2-x1)^2 + (y2-y1)^2)
 
+    let rc = Number(prompt("Ingrese un valor: "))
+    let x1 = Number(prompt("Ingrese el valor: "))
+    let x2 = Number(prompt("Ingrese el valor: "))
+    let y1 = Number(prompt("Ingrese el valor: "))
+    let y2 = Number(prompt("Ingrese el valor: "))
 
-    let sueldoBase = Number(prompt("Ingrese el sueldo base: "))
-    let v1 = 25800
-    let v2 = 50500
-    let v3 = 60000
-    let comision = 0.1
+    let solucion = rc*((x2-x1)**2 + (y2-y1)**2)
 
-    let comision1 = (v1 * comision)
-    let comision2 = (v2 * comision)
-    let comision3 = (v3 * comision)
+    console.group(`%cFormula (${rc}(${x2}-${x1})**${2}+(${y2}-${y1})**${2})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-    let totalVen1 = (v1 + comision1)
-    let totalVen2 = (v2 + comision2)
-    let totalVen3 = (v3 + comision3)
-
-    let totalComision = (totalVen1 + totalVen2 + totalVen3)
-    let sueldo = (sueldoBase + totalVen1 + totalVen2 + totalVen3)
-
-    console.log(`Sueldo inicial: "${sueldoBase}"`);
-
-    console.group(`%cFormula (${totalVen1} + ${totalVen2} + ${totalVen3})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-        console.log(`Comision: "${totalComision}"`);
-    console.groupEnd();
-
-    console.group(`%cFormula (${sueldoBase} + ${totalVen1} + ${totalVen2} * ${totalVen3})`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-        console.log(`Sueldo total: "${sueldo}"`);
+        console.log(`La solución es: : "${solucion}"`);
     console.groupEnd();
 })
