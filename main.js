@@ -1,15 +1,16 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 25. 
-//En el programa de cocina de “Doña Anita” han dado la receta para la preparación de bizcocho especial de chocolate. Por cada 100 gramos de harina hay que añadir 10 gramos de cacao y un puñado de nueces. Si quiero prepararlos con 20 gramos de chocolate. La cantidad de gramos de harina para hacer el bizcocho es
+    // Ejercicio 26. 
+// Un camión transporta 25 cajas de repuestos de carros. Si cada caja pesa 748 Kg ¿ Cuántos Kg transporta ?
     
 
-    let harina = 100
+    let pesoporcaja = 748
+    let cantidadcajas = 25
 
-   let jgramos = harina * 2
+   let pesotrans = (pesoporcaja * cantidadcajas)
    
-    console.group(`%cFormula ${harina} * ${2}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.group(`%cFormula ${pesoporcaja} * ${cantidadcajas}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-    console.log(`La cantidad de gramos para hacer el bizcocho es: ${jgramos}"`);
+    console.log(`La cantidad de peso que transporta es: ${pesotrans}"`);
     console.groupEnd();
 
 })
