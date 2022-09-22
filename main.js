@@ -1,29 +1,21 @@
 addEventListener("DOMContentLoaded", ()=>{
-// Ejercicio 23. 
-// Generar el algoritmo que dé como resultado el tiempo estimado para el llenado de un
-// depósito.
-// • Q=V/t, siendo Q (caudal), V (volumen) y t (tiempo).
-// • Volumen = PI *(radio^2)* H (altura del depósito)
-// • El tiempo se encuentra en minutos.
-// • Normalmente se mide el volumen en litros y el tiempo en segundos..
+    // Ejercicio 24
+    // Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le sobran $91000. ¿cuánto dinero tenía?
+    
 
-    let radio = Number(prompt("Ingrese el valor del radio: "))
-    let altura = Number(prompt("Ingrese la altura: "))
-    let tiempo = Number(prompt("Ingrese el tiempo en minutos: "))
+    let llavesporunidad = 11500
+    let bomba = 1168000
+    let cajaspernosuni = 87000
+    let sobra = 91000
 
-    let tiem = tiempo *60
-    let Volumen = Math.PI * Math.pow(radio, 2) * altura
-    let Q = (Volumen/tiem)
+   let juegosdellaves = llavesporunidad * 5
+   let cajas = cajaspernosuni * 3
 
-    console.group(`%cFormula ${Math.PI} * ${Math.pow(radio, 2)} * ${altura}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+   let total = (juegosdellaves + bomba + cajas + sobra)
 
-    console.log(`Es caudal es igual a "${Volumen}"`);
+    console.group(`%cFormula ${juegosdellaves} + ${bomba} + ${cajas} + ${sobra}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+
+    console.log(`La cantidad de dinero que tenia es: ${total}"`);
     console.groupEnd();
-// -------------------------------------------------------------
-    console.group(`%cFormula ${Volumen}/${tiem}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-    console.log(`Es caudal es igual a "${Q}"`);
-    console.groupEnd();
-
 
 })
