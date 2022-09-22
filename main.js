@@ -1,17 +1,18 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 28. 
-//Pinturas “La brocha gorda” requiere determinar cuánto cobrar por trabajos de pintura. Considere que se cobra por m2 y realice el código que representen el algoritmo que le permita ir generando presupuestos para cada cliente.
+    // Ejercicio 29. 
+//Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo,bpero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron. Realice el código que representen el algoritmo para solucionar este problema. Al final debe entregar el nombre de la persona entrevistada en mayúscula sostenida y minunscula sostenida y la edad del entrevistado.
     
 
-    let metros = Number(prompt("Ingrese la cantidad de metros cuadrados"))
-    let valorpormetro = 15800
+    let nombre = prompt("Ingrese su nombre: ")
+    let año = Number(prompt("Ingrese el año actual: "))
+    let añona = Number(prompt("Ingrese su año de nacimiento: "))
 
-    let precio = metros * valorpormetro
-
+    let edad = año - añona
    
-    console.group(`%cFormula ${metros} * ${valorpormetro}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.group(`%cFormula ${año} - ${añona}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-    console.log(`El precio a pagará por la cantidad de metros es: ${precio}"`);
+    console.log(`edad: "${edad}"`);
     console.groupEnd();
 
+    console.log(`El/La solicitante "${nombre}" tiene una edad de "${edad}" años`);
 })
