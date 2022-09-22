@@ -1,16 +1,18 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 26. 
-// Un camión transporta 25 cajas de repuestos de carros. Si cada caja pesa 748 Kg ¿ Cuántos Kg transporta ?
+    // Ejercicio 27. 
+//Tres estudiantes reunieron tapas de gaseosas para repartirlas y venderlas al final del año. Martin toma 2/3 del total. Jairo un cuarto del total, y Lorena se queda con el resto. ¿qué parte le corresponde a Lorena?
     
 
-    let pesoporcaja = 748
-    let cantidadcajas = 25
+    let tapas = Number(prompt("Ingrese la cantidad de tapas que hay"))
 
-   let pesotrans = (pesoporcaja * cantidadcajas)
+    let Martin = (2/3)*tapas
+    let Jairo = (1/4)*tapas
+    let suma = Martin + Jairo
+    let Lorena = (tapas - suma)
    
-    console.group(`%cFormula ${pesoporcaja} * ${cantidadcajas}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
+    console.group(`%cFormula ${tapas} - ${suma}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-    console.log(`La cantidad de peso que transporta es: ${pesotrans}"`);
+    console.log(`La cantidad de tapas que le corresponden a Lorena es: ${Lorena}"`);
     console.groupEnd();
 
 })
