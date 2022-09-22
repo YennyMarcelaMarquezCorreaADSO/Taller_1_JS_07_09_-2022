@@ -1,21 +1,15 @@
 addEventListener("DOMContentLoaded", ()=>{
-    // Ejercicio 24
-    // Un jefe de obra con el dinero que tiene compra cinco juegos de llaves hexagonales cada uno por $11500. Una bomba en $1168000 y tres cajas de pernos cada uno por $87000. Después de pagar le sobran $91000. ¿cuánto dinero tenía?
+    // Ejercicio 25. 
+//En el programa de cocina de “Doña Anita” han dado la receta para la preparación de bizcocho especial de chocolate. Por cada 100 gramos de harina hay que añadir 10 gramos de cacao y un puñado de nueces. Si quiero prepararlos con 20 gramos de chocolate. La cantidad de gramos de harina para hacer el bizcocho es
     
 
-    let llavesporunidad = 11500
-    let bomba = 1168000
-    let cajaspernosuni = 87000
-    let sobra = 91000
+    let harina = 100
 
-   let juegosdellaves = llavesporunidad * 5
-   let cajas = cajaspernosuni * 3
+   let jgramos = harina * 2
+   
+    console.group(`%cFormula ${harina} * ${2}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
 
-   let total = (juegosdellaves + bomba + cajas + sobra)
-
-    console.group(`%cFormula ${juegosdellaves} + ${bomba} + ${cajas} + ${sobra}`, `background: rebeccapurple; color: antiquewhite; font-family: cursive; padding: 2px; border-radius: 1px solid #925fc4; border-radius: 5px;`);
-
-    console.log(`La cantidad de dinero que tenia es: ${total}"`);
+    console.log(`La cantidad de gramos para hacer el bizcocho es: ${jgramos}"`);
     console.groupEnd();
 
 })
